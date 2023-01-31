@@ -15,6 +15,7 @@ import PracticeApp2 from './functioncomponent/PracticeApp2';
 import { BrowserRouter,Route,Routes,Switch } from "react-router-dom";
 import FirstPage from './functioncomponent/FirstPage';
 import SecondPage from './functioncomponent/SecondPage';
+import NotFound from './functioncomponent/NotFound';
 
 const printMessage=()=>{
   document.getElementById('show-area').innerHTML="我被按到了";
@@ -41,7 +42,8 @@ root.render(
     <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<FirstPage />}/>
-          <Route path="/second" element={<SecondPage />}/>
+          <Route exact path="/second/:id?" element={<SecondPage />}/>
+          <Route path="*" element={<NotFound />} status={404}></Route>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

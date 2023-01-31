@@ -1,6 +1,8 @@
 import React from 'react';
-
-const SecondPage=()=>{
+import { useLocation, useParams } from 'react-router-dom';
+const SecondPage=(props)=>{
+    const { id } = useParams();
+    const { state } = useLocation();
     const StyleSheet={
         width:"100vw",
         height:"100vh",
@@ -13,6 +15,8 @@ const SecondPage=()=>{
     return(
         <div style={StyleSheet}>
             <h1 style={{color:"white",fontFamily:"Microsoft JhengHei"}}>我是第二頁</h1>
+            {id?id:""}
+            {state?state.title:""}
         </div>
     )
 }

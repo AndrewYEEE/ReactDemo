@@ -1,0 +1,21 @@
+#navId{
+    width: 890px;
+    height: 40px;
+    float: left;
+    margin-left: 200px;
+}
+
+#navId Link{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+#navId a{
+    text-decoration: none;
+    color: black;
+    width: 890px;
+}
+
+#navId li a:hover{
+    color: green;
+}
