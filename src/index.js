@@ -10,6 +10,11 @@ import MyLayout from './functioncomponent/MyLayout';
 import MyApp1 from './classcomponent/MyApp';
 import MyAPP2 from './functioncomponent/MyApp2';
 import Baby from './classcomponent/Baby';
+import PracticeApp1 from './functioncomponent/PracticeApp1';
+import PracticeApp2 from './functioncomponent/PracticeApp2';
+import { BrowserRouter,Route,Routes,Switch } from "react-router-dom";
+import FirstPage from './functioncomponent/FirstPage';
+import SecondPage from './functioncomponent/SecondPage';
 
 const printMessage=()=>{
   document.getElementById('show-area').innerHTML="我被按到了";
@@ -29,8 +34,16 @@ root.render(
       <div> Hello world!</div>
     </MyLayout>
     <MyApp1 name={name} value="10%"/>
-    <MyAPP2 name={name} value="10%"/> */}
+    <MyAPP2 name={name} value="10%"/>
     <Baby/>
+    <PracticeApp1/>
+    <PracticeApp2/> */}
+    <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<FirstPage />}/>
+          <Route path="/second" element={<SecondPage />}/>
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
