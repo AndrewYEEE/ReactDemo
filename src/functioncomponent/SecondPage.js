@@ -3,20 +3,16 @@ import { useLocation, useParams } from 'react-router-dom';
 const SecondPage=(props)=>{
     const { id } = useParams();
     const { state } = useLocation();
-    const StyleSheet={
-        width:"100vw",
-        height:"100vh",
-        backgroundColor:"#08D9D6",
-        display: "flex",
-        alignItems:"center",
-        justifyContent:"center",
-        flexDirection:"column"
-    }
     return(
-        <div style={StyleSheet}>
-            <h1 style={{color:"white",fontFamily:"Microsoft JhengHei"}}>我是第二頁</h1>
-            {id?id:""}
-            {state?state.title:""}
+        <div>
+            <h1 style={{color:"white",fontFamily:"Microsoft JhengHei"}}>我是第二頁 {props.value}</h1>
+            <button value={"789"} onClick={props.clickHandle}>button</button>
+            <div>
+                id: {id?id:""}
+            </div>
+            <div>
+                state: {state?state.title:""}
+            </div>
         </div>
     )
 }
