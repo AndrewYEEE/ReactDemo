@@ -1,5 +1,5 @@
 import { Component } from 'react'; //Class Component需要
-
+import React from 'react';
 class MyApp1 extends Component {
     constructor(props) { // 加入建構子以及props參數
         super(props);

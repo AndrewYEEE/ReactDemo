@@ -1,3 +1,4 @@
+import React from 'react';
 const MyLayout=(props)=>{
     const navStyle={
         position:"fixed",

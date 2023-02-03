@@ -1,3 +1,4 @@
+import React from 'react';
 import {useState} from 'react';
 import ProgressDIY from '../classcomponent/ProgressDIY';
 import ProgressDIYF from '../functioncomponent/ProgressDIYF';

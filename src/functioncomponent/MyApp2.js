@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 const MyAPP2 = (props)=>{
     const [name ] = useState(props.name);

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState,useEffect,useRef } from 'react';
 import useRate from './useRate.js';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import './FirstPage.css';
 import {useLocation,useNavigate,useParams} from 'react-router-dom';
 const FirstPage=(props)=>{

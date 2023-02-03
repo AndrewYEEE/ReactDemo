@@ -1,3 +1,4 @@
+import React from 'react';
 function MyButton(props){
     return(
          <button onClick={props.handleClick}> {props.children}</button> 

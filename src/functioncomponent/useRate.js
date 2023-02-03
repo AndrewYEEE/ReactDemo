@@ -1,3 +1,4 @@
+import React from 'react';
 import {useEffect,useState,useRef} from 'react';
 const useRate=(value)=>{
     const [rate, setRate] = useState(0);
