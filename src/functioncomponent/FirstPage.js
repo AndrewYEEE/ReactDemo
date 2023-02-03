@@ -1,5 +1,5 @@
 import './FirstPage.css';
-import { Link } from 'react-router-dom';
+import {useLocation,useNavigate,useParams} from 'react-router-dom';
 const FirstPage=(props)=>{
     return (
         <div >

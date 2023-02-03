@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FirstPage from './FirstPage';
 import SecondPage from './SecondPage';
 import NotFound from './NotFound';
@@ -35,11 +35,3 @@ const MyApp3 = () => {
 
 export default MyApp3;
 
-
-
-
-<Switch>
-    <Route path='/' component={InitHome} />
-    <Route path='/about' component={About} />
-    <Route path='/home' component={Home} />
-</Switch>

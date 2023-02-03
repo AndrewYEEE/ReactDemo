@@ -12,7 +12,7 @@ import MyAPP2 from './functioncomponent/MyApp2';
 import Baby from './classcomponent/Baby';
 import PracticeApp1 from './functioncomponent/PracticeApp1';
 import PracticeApp2 from './functioncomponent/PracticeApp2';
-import { BrowserRouter,Route,Routes,Switch } from "react-router-dom";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 import FirstPage from './functioncomponent/FirstPage';
 import SecondPage from './functioncomponent/SecondPage';
 import NotFound from './functioncomponent/NotFound';

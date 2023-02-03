@@ -1,6 +1,12 @@
 import React from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useParams,useNavigate } from 'react-router-dom';
 const SecondPage=(props)=>{
+    const location = useLocation();
+    const navigate = useNavigate();
+    const params = useParams();
+    console.log(location)
+    console.log(navigate)
+    console.log(params)
     const { id } = useParams();
     const { state } = useLocation();
     return(
