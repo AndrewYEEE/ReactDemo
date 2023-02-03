@@ -18,6 +18,7 @@ import SecondPage from './functioncomponent/SecondPage';
 import NotFound from './functioncomponent/NotFound';
 import MyLayout2 from './functioncomponent/MyLayout2';
 import MyApp3 from './functioncomponent/MyApp3';
+import MyApp4 from './functioncomponent/MyApp4';
 
 const printMessage=()=>{
   document.getElementById('show-area').innerHTML="我被按到了";
@@ -40,8 +41,9 @@ root.render(
     <MyAPP2 name={name} value="10%"/>
     <Baby/>
     <PracticeApp1/>
-    <PracticeApp2/> */}
-    <MyApp3/>
+    <PracticeApp2/>
+    <MyApp3/> */}
+    <MyApp4></MyApp4>
   </React.StrictMode>
 );
 
