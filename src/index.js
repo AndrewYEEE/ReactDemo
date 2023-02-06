@@ -19,7 +19,8 @@ import NotFound from './functioncomponent/NotFound';
 import MyLayout2 from './functioncomponent/MyLayout2';
 import MyApp3 from './functioncomponent/MyApp3';
 import MyApp4 from './functioncomponent/MyApp4';
-
+import {Provider, useDispatch} from 'react-redux';
+import Store from './model/store';
 const printMessage=()=>{
   document.getElementById('show-area').innerHTML="我被按到了";
 }
@@ -43,7 +44,10 @@ root.render(
     <PracticeApp1/>
     <PracticeApp2/>
     <MyApp3/> */}
-    <MyApp4></MyApp4>
+    {/* <MyApp4></MyApp4> */}
+    <Provider store={Store}>
+      <PracticeApp1/>
+    </Provider>
   </React.StrictMode>
 );
 
