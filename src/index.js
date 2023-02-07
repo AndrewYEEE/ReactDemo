@@ -21,6 +21,10 @@ import MyApp3 from './functioncomponent/MyApp3';
 import MyApp4 from './functioncomponent/MyApp4';
 import {Provider, useDispatch} from 'react-redux';
 import Store from './model/store';
+import Counter from './functioncomponent/Counter';
+import CounterStore from './store/store';
+import ToolKitStore from './store/toolkit_store';
+
 const printMessage=()=>{
   document.getElementById('show-area').innerHTML="我被按到了";
 }
@@ -45,8 +49,9 @@ root.render(
     <PracticeApp2/>
     <MyApp3/> */}
     {/* <MyApp4></MyApp4> */}
-    <Provider store={Store}>
-      <PracticeApp1/>
+    <Provider store={ToolKitStore}>
+      {/* <PracticeApp1/> */}
+      <Counter></Counter>
     </Provider>
   </React.StrictMode>
 );
